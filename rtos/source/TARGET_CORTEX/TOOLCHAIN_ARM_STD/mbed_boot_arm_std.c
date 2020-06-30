@@ -24,7 +24,7 @@ extern uint32_t               Image$$ARM_LIB_STACK$$ZI$$Length[];
 
 #if !defined(__MICROLIB)
 
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include <rt_misc.h>
 #include "mbed_rtos_storage.h"
 #include "cmsis_os2.h"

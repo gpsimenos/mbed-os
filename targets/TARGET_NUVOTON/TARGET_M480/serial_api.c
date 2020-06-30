@@ -21,7 +21,7 @@
 #if DEVICE_SERIAL
 
 #include "cmsis.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_assert.h"
 #include "PeripheralPins.h"
 #include "gpio_api.h"

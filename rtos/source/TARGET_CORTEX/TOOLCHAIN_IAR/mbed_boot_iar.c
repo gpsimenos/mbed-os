@@ -16,7 +16,7 @@
  */
 
 #include "cmsis.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_boot.h"
 #if defined(__IAR_SYSTEMS_ICC__ ) && (__VER__ >= 8000000)
 #include <DLib_Threads.h>

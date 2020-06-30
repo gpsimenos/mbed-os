@@ -34,7 +34,7 @@
 #include <stddef.h>
 #include "cmsis.h"
 #include "gpio_irq_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #define NUM_PORTS           3
 #define NUM_PINS_PER_PORT   8

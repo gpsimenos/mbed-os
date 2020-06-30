@@ -17,7 +17,7 @@
 
 #include <new>
 #include <string.h>
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "kvstore_global_api.h"
 #include "kv_config.h"
 #if MBED_CONF_NANOSTACK_HAL_USE_KVSTORE == 1

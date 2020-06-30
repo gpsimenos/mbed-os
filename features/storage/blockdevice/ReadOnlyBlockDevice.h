@@ -27,7 +27,7 @@
 #define MBED_READ_ONLY_BLOCK_DEVICE_H
 
 #include "BlockDevice.h"
-#include "PlatformMutex.h"
+#include "platform/PlatformMutex.h"
 
 namespace mbed {
 

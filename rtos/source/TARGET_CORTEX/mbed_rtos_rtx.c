@@ -19,9 +19,9 @@
 #include "mbed_rtx.h"
 #include "mbed_rtos_storage.h"
 #include "cmsis_os2.h"
-#include "mbed_toolchain.h"
-#include "mbed_error.h"
-#include "mbed_critical.h"
+#include "platform/mbed_toolchain.h"
+#include "platform/mbed_error.h"
+#include "platform/mbed_critical.h"
 #include "mbed_boot.h"
 
 #if defined(FEATURE_TFM)

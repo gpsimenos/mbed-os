@@ -18,7 +18,7 @@
 #include "pinmap.h"
 #include "PortNames.h"
 #include "PeripheralNames.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 /**
  * Configure pin multi-function

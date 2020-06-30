@@ -16,7 +16,7 @@
 #include "gpio_api.h"
 #include "PeripheralNames.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #define GPIO_DATA PIN_DATA(0, 3)
 extern const PinMap PinMap_GPIO_IRQ[];

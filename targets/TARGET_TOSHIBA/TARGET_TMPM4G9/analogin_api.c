@@ -20,7 +20,7 @@
 #include "PeripheralNames.h"
 #include "pinmap.h"
 #include "mbed_wait_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "txz_adc_include.h"
 
 #define ADC_12BIT_RANGE                 0xFFF

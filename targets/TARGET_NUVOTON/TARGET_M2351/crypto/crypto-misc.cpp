@@ -18,9 +18,9 @@
 
 #include "cmsis.h"
 #include "mbed_assert.h"
-#include "mbed_atomic.h"
-#include "mbed_critical.h"
-#include "mbed_error.h"
+#include "platform/mbed_atomic.h"
+#include "platform/mbed_critical.h"
+#include "platform/mbed_error.h"
 #include <limits.h>
 #include "nu_modutil.h"
 #include "nu_bitutil.h"

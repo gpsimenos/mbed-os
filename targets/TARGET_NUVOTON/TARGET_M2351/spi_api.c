@@ -21,7 +21,7 @@
 #if DEVICE_SPI
 
 #include "cmsis.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "pinmap.h"
 #include "PeripheralPins.h"
 #include "nu_modutil.h"

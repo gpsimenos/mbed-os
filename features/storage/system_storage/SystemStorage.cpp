@@ -17,7 +17,7 @@
 #include "features/storage/filesystem/FileSystem.h"
 #include "features/storage/filesystem/fat/FATFileSystem.h"
 #include "features/storage/filesystem/littlefs/LittleFileSystem.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 
 #if COMPONENT_SPIF

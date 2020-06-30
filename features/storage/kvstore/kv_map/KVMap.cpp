@@ -19,7 +19,7 @@
 #include "features/storage/kvstore/conf/kv_config.h"
 #include <stdlib.h>
 #include "string.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 namespace mbed {
 

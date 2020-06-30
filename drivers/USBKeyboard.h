@@ -20,7 +20,7 @@
 
 #include "USBHID.h"
 #include "platform/Stream.h"
-#include "PlatformMutex.h"
+#include "platform/PlatformMutex.h"
 
 /* Modifiers, left keys then right keys. */
 enum MODIFIER_KEY {

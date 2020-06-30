@@ -30,7 +30,7 @@
 **/
 
 #include "stm32wbxx.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "stm32wbxx_ll_hsem.h"
 #include "otp.h"
 

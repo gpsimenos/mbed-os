@@ -26,7 +26,7 @@
 #include "gpio_api.h"
 #include "pinmap.h"
 #include "objects.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_assert.h"
 #include "rtx_lib.h"
 #include "tfm_platform_api.h"

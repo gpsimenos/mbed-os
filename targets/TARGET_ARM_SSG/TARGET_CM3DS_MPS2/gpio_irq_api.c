@@ -16,7 +16,7 @@
 #include <stddef.h>
 #include "objects.h"
 #include "gpio_irq_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #define ERROR_BIT_NUMBER 0xFF
 

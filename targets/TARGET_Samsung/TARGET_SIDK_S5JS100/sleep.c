@@ -24,7 +24,7 @@
 #include "cmsis.h"
 #include "gpio_api.h"
 #include "mbed_power_mgmt.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "rtos_idle.h"
 
 int nbsleep_req = 0;

@@ -19,7 +19,7 @@
 #ifndef __MBED_CHRONO_H__
 #define __MBED_CHRONO_H__
 
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include <cstdint>
 #include <cassert>
 #include <ratio>

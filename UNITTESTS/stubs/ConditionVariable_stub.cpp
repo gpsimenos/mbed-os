@@ -18,7 +18,7 @@
 #define MBED_OS_UNITTESTS_STUBS_CONDITIONVARIABLE_STUB_CPP_
 
 #include "ConditionVariable_stub.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_assert.h"
 
 bool ConditionVariable_stub::time_out = false;

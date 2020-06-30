@@ -20,7 +20,7 @@
 
 #include "ATHandler.h"
 #include "NetworkStack.h"
-#include "PlatformMutex.h"
+#include "platform/PlatformMutex.h"
 #include "AT_CellularDevice.h"
 
 namespace mbed {

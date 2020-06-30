@@ -28,7 +28,7 @@
 #include "EventQueue.h"
 #endif
 
-#include "mbed_poll.h"
+#include "platform/mbed_poll.h"
 #include "ip4string.h"
 #include "ip6string.h"
 #include "ppp_service.h"

@@ -35,7 +35,7 @@
 #include "cmsis.h"
 #include "gpio_irq_api.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "gpio_irq_device.h"
 #include "platform/mbed_critical.h"
 

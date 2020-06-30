@@ -17,8 +17,8 @@
 #include "rza1_eth.h"
 #include "cmsis.h"
 #include "mbed_interface.h"
-#include "mbed_toolchain.h"
-#include "mbed_error.h"
+#include "platform/mbed_toolchain.h"
+#include "platform/mbed_error.h"
 #include "iodefine.h"
 #include "rza1_eth_ext.h"
 

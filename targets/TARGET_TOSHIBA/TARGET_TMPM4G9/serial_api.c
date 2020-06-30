@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 #include <string.h>
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "serial_api.h"
 #include "pinmap.h"
 

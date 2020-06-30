@@ -26,7 +26,7 @@
 #include "AT86RF215Reg.h"
 #include "nanostack/platform/arm_hal_phy.h"
 #include "mbed_trace.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include "DigitalIn.h"
 #include "DigitalOut.h"
 #include "InterruptIn.h"

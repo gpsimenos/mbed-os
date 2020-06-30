@@ -16,7 +16,7 @@
 
 #include "nu_timer.h"
 #include "mbed_power_mgmt.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "us_ticker_api.h"
 #include "mbed_assert.h"
 

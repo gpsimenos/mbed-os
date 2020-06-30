@@ -15,7 +15,7 @@
  */
 #include "mbed_assert.h"
 #include "PeripheralPins.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "fsl_clock.h"
 
 /* Array of IOMUX base address. */

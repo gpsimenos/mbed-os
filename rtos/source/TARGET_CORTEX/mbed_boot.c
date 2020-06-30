@@ -59,9 +59,9 @@
 
 #include "cmsis.h"
 #include "hal/us_ticker_api.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include "mbed_boot.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_mpu_mgmt.h"
 
 int main(void);

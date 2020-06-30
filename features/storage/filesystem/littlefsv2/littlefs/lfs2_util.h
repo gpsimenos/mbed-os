@@ -49,7 +49,7 @@ extern "C"
 // code footprint
 
 #ifdef __MBED__
-#include "mbed_debug.h"
+#include "platform/mbed_debug.h"
 #include "mbed_assert.h"
 #include "cmsis_compiler.h"
 #else

@@ -22,8 +22,8 @@
 #include "features/storage/kvstore/include/KVStore.h"
 #include "features/storage/blockdevice/BlockDevice.h"
 #include "features/storage/blockdevice/BufferedBlockDevice.h"
-#include "PlatformMutex.h"
-#include "mbed_error.h"
+#include "platform/PlatformMutex.h"
+#include "platform/mbed_error.h"
 
 namespace mbed {
 

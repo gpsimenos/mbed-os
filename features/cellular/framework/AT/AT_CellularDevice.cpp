@@ -28,7 +28,7 @@
 #if (DEVICE_SERIAL && DEVICE_INTERRUPTIN) || defined(DOXYGEN_ONLY)
 #include "drivers/BufferedSerial.h"
 #endif // #if DEVICE_SERIAL
-#include "FileHandle.h"
+#include "platform/FileHandle.h"
 #include <ctype.h>
 
 using namespace mbed_cellular_util;

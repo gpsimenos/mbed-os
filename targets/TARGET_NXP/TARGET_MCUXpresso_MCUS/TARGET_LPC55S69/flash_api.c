@@ -15,8 +15,8 @@
  */
 
 #include "flash_api.h"
-#include "mbed_toolchain.h"
-#include "mbed_critical.h"
+#include "platform/mbed_toolchain.h"
+#include "platform/mbed_critical.h"
 
 #if DEVICE_FLASH
 

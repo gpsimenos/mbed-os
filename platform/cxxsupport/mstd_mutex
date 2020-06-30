@@ -49,7 +49,7 @@
 #include <mstd_tuple>
 #include <chrono>
 
-#include "mbed_atomic.h"
+#include "platform/mbed_atomic.h"
 #include "mbed_assert.h"
 
 extern "C" int __cxa_guard_acquire(int *guard_object_p);

@@ -16,7 +16,7 @@
  */
 
 #include "rtos/ThisThread.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "platform/mbed_atomic.h"
 #include "events/EventQueue.h"
 #include "events/mbed_shared_queues.h"

@@ -22,7 +22,7 @@
 
 #include "cmsis.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_power_mgmt.h"
 #include "fsl_dspi.h"
 #include "peripheral_clock_defines.h"

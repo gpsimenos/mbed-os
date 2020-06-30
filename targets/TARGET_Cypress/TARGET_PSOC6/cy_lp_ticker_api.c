@@ -18,7 +18,7 @@
  */
 
 #include "lp_ticker_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "cyhal_lptimer.h"
 #include "cycfg.h"
 

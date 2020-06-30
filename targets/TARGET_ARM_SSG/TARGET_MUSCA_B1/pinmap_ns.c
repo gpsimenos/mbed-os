@@ -24,7 +24,7 @@
  */
 
 #include "mbed_assert.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "objects.h"
 #include "pinmap.h"
 #include "musca_b1_scc_drv.h"

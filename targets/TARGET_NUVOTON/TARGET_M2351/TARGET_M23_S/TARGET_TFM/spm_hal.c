@@ -22,7 +22,7 @@
 #include "spm_db.h"
 #include "target_cfg.h"
 #include "secure_utilities.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 void tfm_spm_hal_init_isolation_hw(void)
 {

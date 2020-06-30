@@ -18,8 +18,8 @@
 #ifndef MBED_FAULT_HANDLER_H
 #define MBED_FAULT_HANDLER_H
 
-#include "mbed_toolchain.h"
-#include "mbed_error.h"
+#include "platform/mbed_toolchain.h"
+#include "platform/mbed_error.h"
 
 #ifdef __cplusplus
 extern "C" {

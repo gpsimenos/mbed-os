@@ -15,7 +15,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 #include <stdio.h>
 #include <stdint.h>

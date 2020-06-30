@@ -17,7 +17,7 @@
  */
 #include "rtos/Thread.h"
 #include "mbed_trace.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "BlockDevice.h"
 #include "FileSystem.h"
 #include "FileSystemStore.h"

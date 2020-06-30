@@ -18,7 +18,7 @@
 #include "drivers/internal/SFDP.h"
 #include "SPIFBlockDevice.h"
 #include "rtos/ThisThread.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 #include <string.h>
 #include <inttypes.h>

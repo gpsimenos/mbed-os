@@ -23,7 +23,7 @@
 #include "i2c_def.h"
 #include "cmsis.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_wait_api.h"
 /* States of a possibly combined I2C transfer */
 typedef enum i2c_transfer_state_t {

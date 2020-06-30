@@ -30,7 +30,7 @@
 **/
 
 #include "stm32f4xx.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 // clock source is selected with CLOCK_SOURCE in json config
 #define USE_PLL_HSE_EXTC 0x8 // Use external clock (ST Link MCO)

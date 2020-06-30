@@ -18,7 +18,7 @@
 #include "gpio_api.h"
 #include "pinmap.h"
 #include "objects.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #define RESERVED_MISC_PIN 7u
 

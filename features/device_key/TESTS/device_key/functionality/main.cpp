@@ -17,7 +17,7 @@
 #include "DeviceKey.h"
 #include "mbedtls/config.h"
 #include "utest/utest.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "unity/unity.h"
 #include "greentea-client/test_env.h"
 #include "KVStore.h"

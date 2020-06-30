@@ -16,7 +16,7 @@
  */
 
 #include "analogout_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "cyhal_dac.h"
 #include "limits.h"
 

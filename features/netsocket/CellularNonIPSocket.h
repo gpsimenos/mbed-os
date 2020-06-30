@@ -20,9 +20,9 @@
 #include "netsocket/Socket.h"
 #include "rtos/Mutex.h"
 #include "rtos/EventFlags.h"
-#include "Callback.h"
-#include "mbed_atomic.h"
-#include "mbed_toolchain.h"
+#include "platform/Callback.h"
+#include "platform/mbed_atomic.h"
+#include "platform/mbed_toolchain.h"
 #include "ControlPlane_netif.h"
 #include "CellularContext.h"
 

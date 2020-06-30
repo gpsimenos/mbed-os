@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "tfm_multi_core_api.h"
 #include "tfm_ns_mailbox.h"
 #include "platform_multicore.h"

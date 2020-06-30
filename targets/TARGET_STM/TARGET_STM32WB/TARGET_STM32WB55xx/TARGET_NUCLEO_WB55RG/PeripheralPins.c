@@ -32,7 +32,7 @@
  */
 
 #include "PeripheralPins.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 //==============================================================================
 // Notes

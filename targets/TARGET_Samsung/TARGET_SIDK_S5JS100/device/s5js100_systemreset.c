@@ -46,7 +46,7 @@
 #include "mbed_interface.h"
 #include "mbed_power_mgmt.h"
 #include "mbed_stats.h"
-#include "mbed_atomic.h"
+#include "platform/mbed_atomic.h"
 
 #include "rtx_os.h"
 #include <inttypes.h>

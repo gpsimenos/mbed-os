@@ -21,7 +21,7 @@
 #include "cyhal_scb_common.h"
 #include "cyhal_utils.h"
 #include "cy_scb_spi.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #if DEVICE_SPI
 

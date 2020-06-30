@@ -19,7 +19,7 @@
 #include "string.h"
 #include "cmsis.h"
 #include "mbed_assert.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralNames.h"
 #include "nu_modutil.h"
 #include "nu_bitutil.h"

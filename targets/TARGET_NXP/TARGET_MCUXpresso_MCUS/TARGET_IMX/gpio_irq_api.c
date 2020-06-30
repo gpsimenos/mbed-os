@@ -22,7 +22,7 @@
 
 #include "gpio_api.h"
 #include "fsl_gpio.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #define CHANNEL_NUM    160
 

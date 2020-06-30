@@ -24,7 +24,7 @@
 #include "rf_configuration.h"
 #include "randLIB.h"
 #include "mbed_trace.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include "common_functions.h"
 #include <Timer.h>
 #include "Timeout.h"

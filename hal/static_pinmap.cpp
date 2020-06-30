@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "static_pinmap.h"
 
 

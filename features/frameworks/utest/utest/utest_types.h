@@ -23,7 +23,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include "utest/utest_shim.h"
-#include "SingletonPtr.h"
+#include "platform/SingletonPtr.h"
 
 namespace utest {
 /** \addtogroup frameworks */

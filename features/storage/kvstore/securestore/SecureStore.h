@@ -38,7 +38,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "KVStore.h"
-#include "PlatformMutex.h"
+#include "platform/PlatformMutex.h"
 
 // Forward declarations
 struct  mbedtls_entropy_context;

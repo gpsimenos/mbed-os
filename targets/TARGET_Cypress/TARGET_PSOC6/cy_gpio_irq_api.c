@@ -18,7 +18,7 @@
  */
 
 #include "mbed_assert.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PinNames.h"
 #include "cyhal_gpio.h"
 #include "cyhal_hwmgr.h"

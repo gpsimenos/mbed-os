@@ -18,7 +18,7 @@
 #ifndef NSAPI_PPP_H_
 #define NSAPI_PPP_H_
 
-#include "FileHandle.h"
+#include "platform/FileHandle.h"
 #include "NetworkStack.h"
 
 namespace mbed {

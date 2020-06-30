@@ -55,7 +55,7 @@
 #include "em_rtc.h"
 #include "em_cmu.h"
 #include "lp_ticker_api.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 #if RTC_CLOCKDIV_INT > 16
 #error invalid prescaler value RTC_CLOCKDIV_INT, since LP ticker resolution will exceed 1ms.

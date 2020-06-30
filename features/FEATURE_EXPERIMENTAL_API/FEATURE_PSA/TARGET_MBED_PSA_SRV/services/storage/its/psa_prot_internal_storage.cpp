@@ -22,7 +22,7 @@
 #include "psa/storage_common.h"
 #include "pits_impl.h"
 #include "kv_config.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 // In EMUL world, there is no real partitioning, which makes the source partition irrelevant.
 // So here we set a global pid value to be used for when calling IMPL functions

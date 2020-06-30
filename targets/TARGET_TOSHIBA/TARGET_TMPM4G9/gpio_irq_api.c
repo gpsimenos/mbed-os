@@ -17,10 +17,10 @@
  * limitations under the License.
  */
 #include "gpio_irq_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralNames.h"
 #include "pinmap.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "txz_gpio.h"
 
 #define CHANNEL_NUM                     (16)

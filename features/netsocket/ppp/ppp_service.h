@@ -19,10 +19,10 @@
 #define PPP_SERVICE_H
 
 #include <stdbool.h>
-#include "Callback.h"
+#include "platform/Callback.h"
 #include "Semaphore.h"
 #include "NetStackMemoryManager.h"
-#include "FileHandle.h"
+#include "platform/FileHandle.h"
 #include "events/EventQueue.h"
 #include "netsocket/PPP.h"
 

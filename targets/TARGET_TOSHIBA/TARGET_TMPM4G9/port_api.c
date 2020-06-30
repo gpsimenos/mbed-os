@@ -18,7 +18,7 @@
  */
 #include "port_api.h"
 #include "mbed_assert.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "txz_gpio.h"
 #include "pinmap.h"
 

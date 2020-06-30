@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_serial_platform.h"
 #include "serial_api.h"
 

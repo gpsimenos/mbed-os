@@ -16,7 +16,7 @@
  */
 
 #include "qspi_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "cyhal_qspi.h"
 
 #if DEVICE_QSPI

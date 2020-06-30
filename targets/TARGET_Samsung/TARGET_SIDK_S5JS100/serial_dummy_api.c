@@ -30,7 +30,7 @@
 #include "cmsis.h"
 #include "pinmap.h"
 #include "PinNames.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "gpio_api.h"
 
 

@@ -42,7 +42,7 @@
 #include "nrf_timer.h"
 #include "app_util_platform.h"
 #include "nrfx_common.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 bool us_ticker_initialized = false;
 

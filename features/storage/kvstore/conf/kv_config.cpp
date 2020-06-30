@@ -24,7 +24,7 @@
 #include "features/storage/filesystem/fat/FATFileSystem.h"
 #include "features/storage/filesystem/littlefs/LittleFileSystem.h"
 #include "features/storage/kvstore/tdbstore/TDBStore.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "drivers/FlashIAP.h"
 #include "features/storage/blockdevice/FlashSimBlockDevice.h"
 #include "mbed_trace.h"

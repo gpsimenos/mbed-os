@@ -49,7 +49,7 @@
 
 #include "cmsis.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralPins.h"
 #include "drivers/spi/adi_spi.h"
 

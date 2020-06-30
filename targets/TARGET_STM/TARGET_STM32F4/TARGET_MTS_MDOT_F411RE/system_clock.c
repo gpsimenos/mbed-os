@@ -35,7 +35,7 @@
 **/
 
 #include "stm32f4xx.h"
-#include "mbed_debug.h"
+#include "platform/mbed_debug.h"
 
 
 /* Select the clock sources (other than HSI) to start with (0=OFF, 1=ON) */

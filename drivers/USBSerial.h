@@ -20,7 +20,7 @@
 
 #include "USBCDC.h"
 #include "platform/Stream.h"
-#include "Callback.h"
+#include "platform/Callback.h"
 
 /**
  * \defgroup drivers_USBSerial USBSerial class

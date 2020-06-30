@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 #include "cmsis.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 /* RAM vector_table needs to be aligned with the size of the vector table */
 /* TODO: Use MXC_IRQ_COUNT to automatically set this alignment per DUI0553A 4.3.4 */

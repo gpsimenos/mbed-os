@@ -17,7 +17,7 @@
 
 #include "BufferedBlockDevice.h"
 #include "mbed_assert.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include <algorithm>
 #include <string.h>
 

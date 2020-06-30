@@ -19,9 +19,9 @@
 #include "cyhal_i2c.h"
 #include "cyhal_utils.h"
 #include "cyhal_hwmgr.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_assert.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 #if DEVICE_I2C
 

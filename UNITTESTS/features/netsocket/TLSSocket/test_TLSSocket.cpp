@@ -19,7 +19,7 @@
 #include "features/netsocket/TLSSocket.h"
 #include "NetworkStack_stub.h"
 
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 mbed_error_status_t mbed_error(mbed_error_status_t error_status, const char *error_msg, unsigned int error_value, const char *filename, int line_number)
 {
     return 0;

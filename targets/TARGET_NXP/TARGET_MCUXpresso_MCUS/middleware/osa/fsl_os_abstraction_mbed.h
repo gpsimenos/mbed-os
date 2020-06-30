@@ -7,7 +7,7 @@
 #if !defined(__FSL_OS_ABSTRACTION_MBED_H__)
 #define __FSL_OS_ABSTRACTION_MBED_H__
 
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 /*!
  * @addtogroup os_abstraction_free_rtos

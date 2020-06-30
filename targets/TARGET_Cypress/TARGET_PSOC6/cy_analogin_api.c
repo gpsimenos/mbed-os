@@ -16,7 +16,7 @@
  */
 
 #include "analogin_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "cyhal_adc.h"
 #include "cyhal_utils.h"
 #include "cyhal_pin_package.h"

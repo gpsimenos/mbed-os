@@ -17,7 +17,7 @@
 
 #include "crc_api.h"
 #include "mbed_assert.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "cyhal_crc.h"
 #include "objects.h"
 

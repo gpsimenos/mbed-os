@@ -32,7 +32,7 @@
 
 #include "cmsis.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralPins.h"
 
 // These variables are used for the "free" function

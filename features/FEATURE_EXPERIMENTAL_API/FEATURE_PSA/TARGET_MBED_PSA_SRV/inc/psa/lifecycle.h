@@ -24,7 +24,7 @@
 
 #include <stddef.h>
 #include <stdint.h>
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include "psa/error.h"
 
 #ifdef   __cplusplus

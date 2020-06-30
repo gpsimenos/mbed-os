@@ -24,9 +24,9 @@
 #include "netsocket/NetworkStack.h"
 #include "rtos/Mutex.h"
 #include "rtos/EventFlags.h"
-#include "Callback.h"
-#include "mbed_atomic.h"
-#include "mbed_toolchain.h"
+#include "platform/Callback.h"
+#include "platform/mbed_atomic.h"
+#include "platform/mbed_toolchain.h"
 #include "SocketStats.h"
 
 /** Socket implementation that uses IP network stack.

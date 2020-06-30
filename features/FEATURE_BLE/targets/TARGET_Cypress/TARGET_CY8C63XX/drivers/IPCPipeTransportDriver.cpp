@@ -20,7 +20,7 @@
 #include "IPCPipeTransportDriver.h"
 #include "ipcpipe_transport.h"
 #include "mbed_assert.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 namespace ble {
 namespace vendor {

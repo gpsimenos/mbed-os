@@ -16,7 +16,7 @@
 
 #include "spi_api.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_wait_api.h"
 #include "platform_devices.h"
 

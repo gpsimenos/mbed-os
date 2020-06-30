@@ -16,7 +16,7 @@
  */
 
 #include "ReadOnlyBlockDevice.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 
 ReadOnlyBlockDevice::ReadOnlyBlockDevice(BlockDevice *bd)

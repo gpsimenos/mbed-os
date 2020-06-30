@@ -16,7 +16,7 @@
 #include <stddef.h>
 #include "cmsis.h"
 #include "gpio_irq_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #define CHANNEL_NUM    32
 #define CMSDK_GPIO_0 CMSDK_GPIO0

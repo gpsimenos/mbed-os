@@ -24,7 +24,7 @@
 #include "ns_hal_init.h"
 #include "include/mesh_system.h"
 #include "mbed_assert.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "ns_file_system.h"
 // For tracing we need to define flag, have include and define group
 #define HAVE_DEBUG 1

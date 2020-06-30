@@ -26,7 +26,7 @@
 #include "USBKeyboard.h"
 #include "platform/Stream.h"
 #include "USBHID.h"
-#include "PlatformMutex.h"
+#include "platform/PlatformMutex.h"
 
 /**
  * \defgroup drivers_USBMouseKeyboard USBMouseKeyboard class

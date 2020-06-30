@@ -30,7 +30,7 @@
 #include "mbed_assert.h"
 #include "pinmap.h"
 #include "PortNames.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "pin_device.h"
 
 extern GPIO_TypeDef *Set_GPIO_Clock(uint32_t port_idx);

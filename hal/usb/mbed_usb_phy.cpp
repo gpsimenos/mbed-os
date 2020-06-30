@@ -17,7 +17,7 @@
 
 #include <stddef.h>
 #include "usb_phy_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #if !defined(DEVICE_USBDEVICE) || !DEVICE_USBDEVICE
 

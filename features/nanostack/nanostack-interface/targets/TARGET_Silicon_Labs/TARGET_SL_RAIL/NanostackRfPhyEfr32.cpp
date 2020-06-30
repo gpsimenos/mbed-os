@@ -22,7 +22,7 @@
 #include "ns_types.h"
 #include "platform/arm_hal_interrupt.h"
 #include "nanostack/platform/arm_hal_phy.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 #include "mbed-trace/mbed_trace.h"
 #define  TRACE_GROUP  "SLRF"

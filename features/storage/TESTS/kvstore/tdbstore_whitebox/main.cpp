@@ -20,7 +20,7 @@
 #ifdef MBED_CONF_RTOS_PRESENT
 #include "Thread.h"
 #endif
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "Timer.h"
 #include "HeapBlockDevice.h"
 #include "FlashSimBlockDevice.h"

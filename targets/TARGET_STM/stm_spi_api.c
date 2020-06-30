@@ -28,8 +28,8 @@
  *******************************************************************************
  */
 #include "mbed_assert.h"
-#include "mbed_error.h"
-#include "mbed_debug.h"
+#include "platform/mbed_error.h"
+#include "platform/mbed_debug.h"
 #include "spi_api.h"
 
 #if DEVICE_SPI

@@ -26,7 +26,7 @@
 
 #include "eventOS_scheduler.h"
 
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_shared_queues.h"
 #include "events/Event.h"
 #include "ns_event_loop_mutex.h"

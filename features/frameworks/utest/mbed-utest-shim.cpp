@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "utest/utest.h"
 
 using namespace utest::v1;

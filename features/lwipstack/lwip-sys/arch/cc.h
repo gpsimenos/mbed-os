@@ -34,7 +34,7 @@
 
 #include <stdint.h>
 #include <stddef.h> /* for size_t */
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include "lwipopts.h"
 
 #ifdef __cplusplus

@@ -45,7 +45,7 @@
 
 #include "cmsis.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralPins.h"
 #include "drivers/i2c/adi_i2c.h"
 

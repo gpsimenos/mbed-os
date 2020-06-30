@@ -19,7 +19,7 @@
 #ifndef CY_MBED_POST_INIT_H
 #define CY_MBED_POST_INIT_H
 
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 #ifdef __cplusplus
 extern "C" {

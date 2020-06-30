@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "tmpm46b_esg.h"
 #include "trng_api.h"
 

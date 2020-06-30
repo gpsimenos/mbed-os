@@ -20,7 +20,7 @@
 
 #include "drivers/internal/TaskBase.h"
 #include "platform/Callback.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 #define MBED_MAX_TASK_SIZE  32
 

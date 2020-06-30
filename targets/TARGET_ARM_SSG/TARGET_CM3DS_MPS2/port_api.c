@@ -16,7 +16,7 @@
 #include <stddef.h>
 #include "port_api.h"
 #include "objects.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 PinName port_pin(PortName port, int pin_n)
 {

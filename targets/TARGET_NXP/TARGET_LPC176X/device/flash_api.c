@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 #if DEVICE_FLASH
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 #include "flash_api.h"
 #include "mbed_assert.h"

@@ -26,7 +26,7 @@
 #include "MIDIMessage.h"
 #include "EventFlags.h"
 #include "Mutex.h"
-#include "Callback.h"
+#include "platform/Callback.h"
 
 #define DEFAULT_CONFIGURATION (1)
 

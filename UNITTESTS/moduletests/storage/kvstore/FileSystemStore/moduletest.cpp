@@ -18,7 +18,7 @@
 #include "features/storage/blockdevice/HeapBlockDevice.h"
 #include "features/storage/kvstore/filesystemstore/FileSystemStore.h"
 #include "features/storage/filesystem/littlefs/LittleFileSystem.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include <stdlib.h>
 
 #define HEAPBLOCK_SIZE (4096)

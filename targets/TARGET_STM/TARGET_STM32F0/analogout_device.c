@@ -32,7 +32,7 @@
 
 #include "cmsis.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralPins.h"
 
 void analogout_init(dac_t *obj, PinName pin)

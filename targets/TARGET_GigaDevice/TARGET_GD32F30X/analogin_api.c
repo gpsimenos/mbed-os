@@ -23,7 +23,7 @@
 #include "cmsis.h"
 #include "pinmap.h"
 #include "PeripheralPins.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #define DEV_ADC_ACCURACY_12BIT           0xFFF
 #define DEV_ADC_PRECISION_12TO16(val)    ((val << 4)| ((val >> 8) & (uint16_t)0x000F))

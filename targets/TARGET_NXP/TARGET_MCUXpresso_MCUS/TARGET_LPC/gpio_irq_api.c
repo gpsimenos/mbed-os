@@ -23,7 +23,7 @@
 #include "gpio_api.h"
 #include "fsl_inputmux.h"
 #include "fsl_pint.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #define INTERRUPT_PORTS 2
 

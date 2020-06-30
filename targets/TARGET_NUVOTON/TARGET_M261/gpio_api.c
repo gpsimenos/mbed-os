@@ -18,7 +18,7 @@
 #include "gpio_api.h"
 #include "mbed_assert.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralPins.h"
 
 uint32_t gpio_set(PinName pin)

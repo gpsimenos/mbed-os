@@ -15,7 +15,7 @@
  */
 
 #include "i2c_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "i2c_ip6510_drv.h"
 #include "objects.h"
 #include "pinmap.h"

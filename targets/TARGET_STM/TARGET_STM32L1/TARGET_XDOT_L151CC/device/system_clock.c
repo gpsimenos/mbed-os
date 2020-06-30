@@ -37,7 +37,7 @@
 
 #include "stm32l1xx.h"
 #include "stdio.h"
-#include "mbed_debug.h"
+#include "platform/mbed_debug.h"
 
 /*!< Uncomment the following line if you need to relocate your vector Table in
      Internal SRAM. */

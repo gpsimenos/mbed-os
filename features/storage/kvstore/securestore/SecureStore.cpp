@@ -27,7 +27,7 @@
 #include "DeviceKey.h"
 #include "mbed_assert.h"
 #include "mbed_wait_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include <algorithm>
 #include <string.h>
 #include <stdio.h>

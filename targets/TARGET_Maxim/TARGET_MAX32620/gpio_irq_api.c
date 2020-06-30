@@ -34,7 +34,7 @@
 #include <stddef.h>
 #include "cmsis.h"
 #include "gpio_irq_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "ioman_regs.h"
 #include "pwrman_regs.h"
 #include "pwrseq_regs.h"

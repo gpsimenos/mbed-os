@@ -21,7 +21,7 @@
 #include "cmsis.h"
 #include "partition_M2351.h"
 #include "stddriver_secure.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #if defined(DOMAIN_NS) && (DOMAIN_NS == 1L) && (TFM_LVL > 0)
 #include "tfm_ns_lock.h"
 #endif

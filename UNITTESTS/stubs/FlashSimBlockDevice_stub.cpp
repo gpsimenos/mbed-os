@@ -17,7 +17,7 @@
 
 #include "FlashSimBlockDevice.h"
 #include "mbed_assert.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include <algorithm>
 #include <stdlib.h>
 #include <string.h>

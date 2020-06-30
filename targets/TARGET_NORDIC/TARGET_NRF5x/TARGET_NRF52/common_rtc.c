@@ -40,7 +40,7 @@
 #include "common_rtc.h"
 #include "app_util.h"
 #include "lp_ticker_api.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 #if defined(NRF52_PAN_20)
 /* Macro for testing if the SoftDevice is active, regardless of whether the
@@ -226,7 +226,7 @@ void common_rtc_set_interrupt(uint32_t ticks_count, uint32_t cc_channel,
  */
 #if defined(TARGET_MCU_NRF51822)
 
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 
 #define MAX_RTC_COUNTER_VAL     ((1uL << RTC_COUNTER_BITS) - 1)

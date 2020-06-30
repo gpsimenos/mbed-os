@@ -21,8 +21,8 @@
 #include "platform/source/SysTimer.h"
 #include "us_ticker_api.h"
 #include "lp_ticker_api.h"
-#include "mbed_critical.h"
-#include "mbed_error.h"
+#include "platform/mbed_critical.h"
+#include "platform/mbed_error.h"
 #include <new>
 
 /* This provides the marshalling point for a system global SysTimer, which

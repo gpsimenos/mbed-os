@@ -18,7 +18,7 @@
 #if DEVICE_I2C
 
 #include "cmsis.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_wait_api.h"
 #include "CM3DS.h"
 #include "pinmap.h"

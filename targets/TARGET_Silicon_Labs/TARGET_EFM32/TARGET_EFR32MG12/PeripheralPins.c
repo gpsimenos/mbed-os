@@ -22,7 +22,7 @@
  ******************************************************************************/
 
 #include "PeripheralPins.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 /************ADC***************/
 /* The third "function" value is used to select the correct ADC channel */

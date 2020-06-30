@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "watchdog_api.h"
 #include "cyhal_wdt.h"
 

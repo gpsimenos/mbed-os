@@ -16,7 +16,7 @@
  */
 
 #include "events/EventQueue.h"
-#include "Callback.h"
+#include "platform/Callback.h"
 #include "EventQueue_stub.h"
 
 using namespace mbed;

@@ -16,7 +16,7 @@
  */
 
 #include "pwmout_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "cyhal_pwm.h"
 
 #if DEVICE_PWMOUT

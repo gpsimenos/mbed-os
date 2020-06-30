@@ -31,7 +31,7 @@
 #include "mtqn_low_power.h"
 
 #include "stdio.h"
-#include "mbed_debug.h"
+#include "platform/mbed_debug.h"
 
 static uint32_t portA[6];
 static uint32_t portB[6];

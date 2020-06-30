@@ -32,7 +32,7 @@
 
 #include "stm32h7xx.h"
 #include "nvic_addr.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 /*!< Uncomment the following line if you need to relocate your vector Table in
      Internal SRAM. */

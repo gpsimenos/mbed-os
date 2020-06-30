@@ -21,9 +21,9 @@
 #include "cmsis.h"
 #include "cmsis_os2.h"
 #include "tfm_ns_lock.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "mbed_assert.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 /* Approach to serialization of NS secure calls required by TF-M secure world
  *

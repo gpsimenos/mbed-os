@@ -33,7 +33,7 @@
 
 #if DEVICE_FLASH
 #include "flash_api.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "cmsis.h"
 #include "flc.h"
 

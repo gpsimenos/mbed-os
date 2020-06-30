@@ -16,7 +16,7 @@
 
 #include <string.h>
 
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "objects.h"
 #include "pinmap.h"
 #include "serial_api.h"

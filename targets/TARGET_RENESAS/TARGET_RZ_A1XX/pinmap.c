@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 #include "PeripheralPins.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "gpio_addrdefine.h"
 
 PinName gpio_multi_guard = (PinName)NC; /* If set pin name here, setting of the "pin" is just one time */

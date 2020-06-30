@@ -17,7 +17,7 @@
 
 #include "ExhaustibleBlockDevice.h"
 #include "mbed.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 
 ExhaustibleBlockDevice::ExhaustibleBlockDevice(BlockDevice *bd, uint32_t erase_cycles)

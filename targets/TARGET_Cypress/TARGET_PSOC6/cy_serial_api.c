@@ -17,7 +17,7 @@
 
 #include "hal/serial_api.h"
 #include "cyhal_uart.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralPins.h"
 #include "PinNames.h"
 

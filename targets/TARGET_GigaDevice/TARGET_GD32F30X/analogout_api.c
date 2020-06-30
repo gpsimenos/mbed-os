@@ -22,7 +22,7 @@
 
 #include "cmsis.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralPins.h"
 
 #define DEV_DAC_ACCURACY_12BIT (0xFFF) // 12 bits

@@ -30,7 +30,7 @@
 #include "mbed_assert.h"
 #include "gpio_api.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "pin_device.h"
 
 extern const uint32_t ll_pin_defines[16];

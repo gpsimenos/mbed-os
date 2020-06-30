@@ -32,8 +32,8 @@
 #include "sleep_api.h"
 #include "us_ticker_api.h"
 #include "us_ticker_data.h"
-#include "mbed_critical.h"
-#include "mbed_error.h"
+#include "platform/mbed_critical.h"
+#include "platform/mbed_error.h"
 
 extern void save_timer_ctx(void);
 extern void restore_timer_ctx(void);

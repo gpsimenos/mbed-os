@@ -21,8 +21,8 @@
 #include <stddef.h>
 #include "USBDevice_Types.h"
 #include "USBPhy.h"
-#include "mbed_critical.h"
-#include "Callback.h"
+#include "platform/mbed_critical.h"
+#include "platform/Callback.h"
 
 /**
  * \defgroup drivers_USBDevice USBDevice class

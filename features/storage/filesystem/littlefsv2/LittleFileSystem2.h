@@ -22,7 +22,7 @@
 
 #include "FileSystem.h"
 #include "BlockDevice.h"
-#include "PlatformMutex.h"
+#include "platform/PlatformMutex.h"
 #include "lfs2.h"
 
 namespace mbed {

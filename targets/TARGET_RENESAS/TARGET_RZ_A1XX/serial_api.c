@@ -27,7 +27,7 @@
 
 #include "iodefine.h"
 #include "mbed_drv_cfg.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 /******************************************************************************
  * INITIALIZATION

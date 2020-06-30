@@ -17,7 +17,7 @@
 #define MBED_I2C_DEVICE_H
 
 #include "cmsis.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #ifdef __cplusplus
 extern "C" {

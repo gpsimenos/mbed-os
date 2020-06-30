@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#include "mbed_poll.h"
+#include "platform/mbed_poll.h"
 #include "mbed_poll_stub.h"
 
 int mbed_poll_stub::revents_value = POLLOUT;

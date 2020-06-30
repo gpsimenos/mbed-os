@@ -28,8 +28,8 @@
 #include "events/EventQueue.h"
 #include "OnboardNetworkStack.h"
 #include "Kernel.h"
-#include "PlatformMutex.h"
-#include "SingletonPtr.h"
+#include "platform/PlatformMutex.h"
+#include "platform/SingletonPtr.h"
 
 using namespace std::chrono;
 using rtos::Kernel::Clock;

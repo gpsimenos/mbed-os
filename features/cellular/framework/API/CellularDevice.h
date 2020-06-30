@@ -19,7 +19,7 @@
 #define CELLULAR_DEVICE_H_
 
 #include "CellularStateMachine.h"
-#include "Callback.h"
+#include "platform/Callback.h"
 #include "ATHandler.h"
 #include "PinNames.h"
 

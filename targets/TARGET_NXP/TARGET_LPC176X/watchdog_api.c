@@ -23,7 +23,7 @@
 #include "watchdog_api.h"
 #include "reset_reason_api.h"
 #include "device.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include <stdbool.h>
 
 

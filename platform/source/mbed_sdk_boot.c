@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include <stdlib.h>
 #include <stdint.h>
 #include "cmsis.h"

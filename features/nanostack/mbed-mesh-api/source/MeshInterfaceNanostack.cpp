@@ -21,7 +21,7 @@
 #include "nanostack/net_interface.h"
 #include "thread_management_if.h"
 #include "ip6string.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 nsapi_error_t Nanostack::Interface::get_ip_address(SocketAddress *address)
 {

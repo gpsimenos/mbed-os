@@ -29,7 +29,7 @@
 #if DEVICE_QSPI
 
 #include "qspi_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "cmsis.h"
 #include "pinmap.h"
 #include "PeripheralPins.h"

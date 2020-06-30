@@ -19,7 +19,7 @@
 #include "gpio_api.h"
 #include "PeripheralNames.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "txz_gpio.h"
 
 #define GPIO_DATA                       PIN_DATA(0, 2)

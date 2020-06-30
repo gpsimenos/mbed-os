@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 #include "spi_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "txz_tspi.h"
 #include "pinmap.h"
 

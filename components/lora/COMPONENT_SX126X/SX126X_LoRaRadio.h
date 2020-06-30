@@ -27,7 +27,7 @@ SPDX-License-Identifier: BSD-3-Clause
 
 #if DEVICE_SPI
 
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "PinNames.h"
 #include "InterruptIn.h"
 #include "DigitalOut.h"

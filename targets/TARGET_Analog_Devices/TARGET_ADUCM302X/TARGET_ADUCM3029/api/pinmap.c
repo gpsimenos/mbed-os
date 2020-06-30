@@ -40,7 +40,7 @@
 
 #include "mbed_assert.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #include "PinNames.h"
 #include "adi_gpio.h"

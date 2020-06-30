@@ -21,8 +21,8 @@
 #include "psa/internal_trusted_storage.h"
 #include "psa_storage_common_impl.h"
 #include "pits_impl.h"
-#include "mbed_error.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_error.h"
+#include "platform/mbed_toolchain.h"
 
 using namespace mbed;
 

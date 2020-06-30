@@ -57,10 +57,10 @@
 
 #include "mbedtls/platform.h"
 #include "mbedtls/ecp_internal.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include "mbed_assert.h"
-#include "mbed_error.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_error.h"
+#include "platform/mbed_toolchain.h"
 #include "nu_bitutil.h"
 #include "crypto-misc.h"
 

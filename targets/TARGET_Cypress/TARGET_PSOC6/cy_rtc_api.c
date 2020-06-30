@@ -17,7 +17,7 @@
 
 #include "rtc_api.h"
 #include "cyhal_rtc.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_mktime.h"
 #include <time.h>
 

@@ -16,7 +16,7 @@
  */
 #include "cmsis.h"
 #include "us_ticker_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "cy_us_ticker.h"
 #include "cyhal_timer.h"
 #include "cy_tcpwm_counter.h"

@@ -17,7 +17,7 @@
 
 #include "trng_api.h"
 #include "cyhal_trng.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include <string.h>
 
 #if DEVICE_TRNG

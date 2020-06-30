@@ -21,7 +21,7 @@
 #include "features/storage/filesystem/Dir.h"
 #include "features/storage/filesystem/File.h"
 #include "features/storage/blockdevice/BlockDevice.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>

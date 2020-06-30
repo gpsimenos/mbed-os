@@ -21,7 +21,7 @@
 
 #include <string.h>
 #include "flash_data.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "M261_mem.h"
 
 // This is a flash algo binary blob. It is PIC (position independent code) that should be stored in RAM

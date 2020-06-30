@@ -36,7 +36,7 @@
 #if MBED_CONF_TARGET_LPTICKER_LPTIM
 
 #include "lp_ticker_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_power_mgmt.h"
 #include "platform/mbed_critical.h"
 #include <stdbool.h>

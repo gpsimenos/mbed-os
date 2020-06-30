@@ -18,7 +18,7 @@
 #ifndef __FILE_HANDLE_STUB_H__
 #define __FILE_HANDLE_STUB_H__
 
-#include "FileHandle.h"
+#include "platform/FileHandle.h"
 
 namespace mbed {
 

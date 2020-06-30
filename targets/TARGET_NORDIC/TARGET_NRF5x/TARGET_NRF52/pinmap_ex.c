@@ -17,7 +17,7 @@
 
 #include "pinmap_ex.h"
 
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include "nrf.h"
 #include "nrf_peripherals.h"
 

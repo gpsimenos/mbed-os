@@ -22,7 +22,7 @@
 
 #include <string.h>
 #include "flash_data.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "partition_M2351.h"
 
 #if defined (__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE == 3U)

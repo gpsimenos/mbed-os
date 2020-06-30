@@ -14,7 +14,7 @@
  * limitations under the License.
  */
  
- #include "mbed_toolchain.h"
+ #include "platform/mbed_toolchain.h"
 
  /* Code Read Protection
 

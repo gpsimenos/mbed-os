@@ -24,7 +24,7 @@
 #include "nu_modutil.h"
 #include "nu_miscutil.h"
 #include "nu_bitutil.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 #define NU_I2C_DEBUG    0
 

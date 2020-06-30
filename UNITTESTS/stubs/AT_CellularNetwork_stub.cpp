@@ -19,7 +19,7 @@
 #include "CellularNetwork.h"
 #include "CellularUtil.h"
 #include "CellularLog.h"
-#include "FileHandle.h"
+#include "platform/FileHandle.h"
 #include "nsapi_types.h"
 
 using namespace mbed;

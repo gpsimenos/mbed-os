@@ -15,7 +15,7 @@
  */
 
 #include "flash_api.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "tmpm46b_fc.h"
 
 #define PROGRAM_WIRTE_MAX             16U      // Page program could be written 16 bytes/4 words once

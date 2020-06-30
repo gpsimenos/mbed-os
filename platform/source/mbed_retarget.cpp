@@ -1404,7 +1404,7 @@ extern "C" int statvfs(const char *path, struct statvfs *buf)
 
 #if defined(TOOLCHAIN_GCC)
 /* prevents the exception handling name demangling code getting pulled in */
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 namespace __gnu_cxx {
 void __verbose_terminate_handler()
 {

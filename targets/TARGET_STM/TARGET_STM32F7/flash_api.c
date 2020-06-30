@@ -20,7 +20,7 @@
 #include "flash_api.h"
 #include "flash_data.h"
 #include "platform/mbed_critical.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 static uint32_t GetSector(uint32_t Address);
 static uint32_t GetSectorSize(uint32_t Sector);

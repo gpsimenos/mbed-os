@@ -20,7 +20,7 @@
 #include "spi_api.h"
 #include "gpio_api.h"
 #include "reset_reason_api.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 // To be re-implemented in the target layer if required
 MBED_WEAK void gpio_free(gpio_t *obj)

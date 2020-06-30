@@ -18,7 +18,7 @@
 #include "mbed_assert.h"
 #include "pinmap.h"
 #include "PortNames.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 extern uint32_t gpio_clock_enable(uint32_t port_idx);
 

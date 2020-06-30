@@ -41,7 +41,7 @@
 #if DEVICE_FLASH
 #include "flash_api.h"
 #include "flash_data.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 // This file is automagically generated
 

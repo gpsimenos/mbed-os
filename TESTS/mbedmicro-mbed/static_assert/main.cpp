@@ -17,7 +17,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include "greentea-client/test_env.h"
 #include "unity.h"
 #include "utest.h"

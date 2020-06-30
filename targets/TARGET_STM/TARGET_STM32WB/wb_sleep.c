@@ -17,7 +17,7 @@
 
 #if DEVICE_SLEEP
 
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 extern void save_timer_ctx(void);
 extern void restore_timer_ctx(void);

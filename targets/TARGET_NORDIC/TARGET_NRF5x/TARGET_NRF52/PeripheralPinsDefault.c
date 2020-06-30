@@ -16,7 +16,7 @@
  */
 
 #include "pinmap_ex.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 /* Default mapping between I2C pins and I2C instance.
  * Can be overwritten by user.

@@ -18,8 +18,8 @@
 #include "mps2_ethernet_api.h"
 #include "cmsis.h"
 #include "mbed_interface.h"
-#include "mbed_toolchain.h"
-#include "mbed_error.h"
+#include "platform/mbed_toolchain.h"
+#include "platform/mbed_error.h"
 #include "ETH_MPS2.h"
 #include "mbed_wait_api.h"
 

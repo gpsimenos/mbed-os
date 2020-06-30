@@ -23,7 +23,7 @@
 #ifndef RTOS_IDLE_H
 #define RTOS_IDLE_H
 
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 #ifdef __cplusplus
 extern "C" {

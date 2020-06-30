@@ -32,8 +32,8 @@
 
 #include "rtc_api_hal.h"
 #include "mbed_mktime.h"
-#include "mbed_error.h"
-#include "mbed_critical.h"
+#include "platform/mbed_error.h"
+#include "platform/mbed_critical.h"
 
 #if DEVICE_LPTICKER && !MBED_CONF_TARGET_LPTICKER_LPTIM
 volatile uint32_t LPTICKER_counter = 0;

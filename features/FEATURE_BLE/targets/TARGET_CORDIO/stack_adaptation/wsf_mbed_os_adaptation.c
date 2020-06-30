@@ -15,7 +15,7 @@
  */
 
 #include "wsf_mbed_os_adaptation.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 void wsf_mbed_os_critical_section_enter(void)
 {

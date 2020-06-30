@@ -18,7 +18,7 @@
 #include "pwmout_api.h"
 #include "cmsis.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralPins.h"
 
 #define DEV_PWMOUT_APB_MASK     0x00010000U

@@ -22,7 +22,7 @@
 // mbed Includes
 #include "mbed_assert.h"
 #include "platform/mbed_power_mgmt.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 // Cordio Includes
 #include "ll_init_api.h"

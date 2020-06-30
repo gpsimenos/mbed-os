@@ -34,8 +34,8 @@
 #include "serial_api.h"
 #include <string.h>
 #include "mbed_assert.h"
-#include "mbed_debug.h"
-#include "mbed_error.h"
+#include "platform/mbed_debug.h"
+#include "platform/mbed_error.h"
 
 #include "PeripheralPins.h"
 

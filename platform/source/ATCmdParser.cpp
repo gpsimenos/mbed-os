@@ -19,9 +19,9 @@
  *
  */
 
-#include "ATCmdParser.h"
-#include "mbed_poll.h"
-#include "mbed_debug.h"
+#include "platform/ATCmdParser.h"
+#include "platform/mbed_poll.h"
+#include "platform/mbed_debug.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -28,7 +28,7 @@
   */
 
 #include "stm32g0xx.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 /*!< Uncomment the following line if you need to relocate your vector Table in
      Internal SRAM. */

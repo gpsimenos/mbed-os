@@ -31,7 +31,7 @@
  *******************************************************************************
  */
 
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "us_ticker_api.h"
 #include "PeripheralNames.h"
 #include "tmr_regs.h"

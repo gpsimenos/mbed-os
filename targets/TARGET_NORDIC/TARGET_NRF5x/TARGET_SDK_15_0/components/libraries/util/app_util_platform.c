@@ -39,7 +39,7 @@
  */
 #include "app_util_platform.h"
 
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 #ifdef SOFTDEVICE_PRESENT
 /* Global nvic state instance, required by nrf_nvic.h */

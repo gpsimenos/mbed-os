@@ -19,7 +19,7 @@
 #include "can_api.h"
 #include "pinmap.h"
 #include "PeripheralPins.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #if DEVICE_CAN
 

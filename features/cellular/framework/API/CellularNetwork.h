@@ -18,7 +18,7 @@
 #define CELLULAR_NETWORK_H_
 
 #include "CellularList.h"
-#include "Callback.h"
+#include "platform/Callback.h"
 #include "nsapi_types.h"
 
 namespace mbed {

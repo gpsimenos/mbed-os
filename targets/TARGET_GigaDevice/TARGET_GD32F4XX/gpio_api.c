@@ -19,7 +19,7 @@
 #include "mbed_assert.h"
 #include "gpio_api.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 extern const int GD_GPIO_MODE[];
 extern const int GD_GPIO_PULL_UP_DOWN[];

@@ -17,7 +17,7 @@
 
 #include "RM1000_AT_CellularStack.h"
 
-#include "mbed_poll.h"
+#include "platform/mbed_poll.h"
 
 #include "mbed-trace/mbed_trace.h"
 #ifndef TRACE_GROUP

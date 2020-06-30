@@ -25,7 +25,7 @@
 #include "nu_modutil.h"
 #include "nu_miscutil.h"
 #include "nu_bitutil.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 struct nu_i2c_var {
     i2c_t *     obj;

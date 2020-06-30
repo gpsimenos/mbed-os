@@ -22,8 +22,8 @@
 #include <string.h>
 
 #include "device.h"
-#include "mbed_atomic.h"
-#include "mbed_error.h"
+#include "platform/mbed_atomic.h"
+#include "platform/mbed_error.h"
 #include "mbed_interface.h"
 #include "mbed_crash_data_offsets.h"
 

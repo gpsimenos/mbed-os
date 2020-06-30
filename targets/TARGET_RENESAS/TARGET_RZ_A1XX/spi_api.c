@@ -19,7 +19,7 @@
 #include "spi_api.h"
 #include "cmsis.h"
 #include "PeripheralPins.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "RZ_A1_Init.h"
 #include "mbed_drv_cfg.h"
 

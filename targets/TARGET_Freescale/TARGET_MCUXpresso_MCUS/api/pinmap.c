@@ -15,7 +15,7 @@
  */
 #include "mbed_assert.h"
 #include "pinmap.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "fsl_port.h"
 
 /* Array of PORT peripheral base address. */

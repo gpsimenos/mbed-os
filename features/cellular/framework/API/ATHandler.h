@@ -24,7 +24,7 @@
 #include "events/EventQueue.h"
 #include "nsapi_types.h"
 
-#include "Callback.h"
+#include "platform/Callback.h"
 #include "rtos/Kernel.h"
 
 #include <cstdarg>

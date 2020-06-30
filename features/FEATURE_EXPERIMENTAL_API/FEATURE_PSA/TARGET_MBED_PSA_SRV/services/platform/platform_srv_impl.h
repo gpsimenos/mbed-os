@@ -20,7 +20,7 @@
 
 #include "psa/client.h"
 #include "psa/lifecycle.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include "tfm_platform_api.h"
 
 psa_status_t psa_platfrom_lifecycle_get_impl(uint32_t *lc_state);

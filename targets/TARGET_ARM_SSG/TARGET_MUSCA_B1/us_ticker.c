@@ -22,7 +22,7 @@
  */
 
 #include "device.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "timer_cmsdk_drv.h"
 #include "us_ticker_api.h"
 

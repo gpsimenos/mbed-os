@@ -24,8 +24,8 @@
 #ifndef MBED_ASSERT_H
 #define MBED_ASSERT_H
 
-#include "mbed_preprocessor.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_preprocessor.h"
+#include "platform/mbed_toolchain.h"
 
 #ifdef __cplusplus
 extern "C" {

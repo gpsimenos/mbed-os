@@ -25,7 +25,7 @@
 
 #include "psa/error.h"
 #include "psa/storage_common.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 #ifdef __cplusplus
 extern "C" {

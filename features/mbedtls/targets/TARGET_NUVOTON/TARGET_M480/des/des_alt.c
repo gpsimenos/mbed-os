@@ -25,8 +25,8 @@
 #include <stdbool.h>
 #include "crypto-misc.h"
 #include "nu_bitutil.h"
-#include "mbed_toolchain.h"
-#include "mbed_error.h"
+#include "platform/mbed_toolchain.h"
+#include "platform/mbed_error.h"
 
 /* DES DMA compatible buffer requirements
  * 

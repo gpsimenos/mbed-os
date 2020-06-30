@@ -33,7 +33,7 @@
 
 #include "stm32f7xx.h"
 #include "nvic_addr.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #if TARGET_UHURU_RAVEN
 #include "uhuru_raven_init.h"
 #endif

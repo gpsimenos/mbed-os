@@ -26,7 +26,7 @@
 #include <stddef.h>
 #include "gpio_irq_api.h"
 #include "objects.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 int gpio_irq_init(gpio_irq_t *obj, PinName pin, gpio_irq_handler handler,
                   uint32_t id)

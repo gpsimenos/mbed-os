@@ -20,7 +20,7 @@
 #include "events/EventQueue.h"
 #include "CellularNetwork.h"
 #include "CellularCommon.h"
-#include "PlatformMutex.h"
+#include "platform/PlatformMutex.h"
 
 namespace mbed {
 

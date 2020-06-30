@@ -17,7 +17,7 @@
 
 #include "trng_api.h"
 #include "crypto.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 MBED_WEAK void trng_init(trng_t *obj)
 {

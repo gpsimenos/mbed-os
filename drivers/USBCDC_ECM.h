@@ -26,7 +26,7 @@
 #include "EventFlags.h"
 #include "EventQueue.h"
 #include "Thread.h"
-#include "Callback.h"
+#include "platform/Callback.h"
 
 #define MAX_PACKET_SIZE_INT     (64)
 #define MAX_PACKET_SIZE_BULK    (64)

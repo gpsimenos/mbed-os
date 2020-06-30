@@ -18,7 +18,7 @@
 #define MBED_LOWPOWERTICKER_H
 
 #include "hal/ticker_api.h"
-#include "Callback.h"
+#include "platform/Callback.h"
 
 namespace mbed {
 

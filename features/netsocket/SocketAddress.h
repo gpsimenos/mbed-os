@@ -23,7 +23,7 @@
 
 #include <memory>
 #include "nsapi_types.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 // Predeclared classes
 class NetworkStack;

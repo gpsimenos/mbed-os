@@ -16,7 +16,7 @@
  */
 
 #include "AsyncOp.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "mbed_assert.h"
 
 using namespace rtos;

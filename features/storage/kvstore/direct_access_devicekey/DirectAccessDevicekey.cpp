@@ -20,7 +20,7 @@
 #include "drivers/FlashIAP.h"
 #include <string.h>
 #include <stdio.h>
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "MbedCRC.h"
 #include "mbed_trace.h"
 #include "kv_config.h"

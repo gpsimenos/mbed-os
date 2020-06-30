@@ -16,7 +16,7 @@
  */
 
 #include "gtest/gtest.h"
-#include "ATCmdParser.h"
+#include "platform/ATCmdParser.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>

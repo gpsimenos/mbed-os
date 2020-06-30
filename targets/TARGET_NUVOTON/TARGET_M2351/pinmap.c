@@ -21,7 +21,7 @@
 #include "pinmap.h"
 #include "PortNames.h"
 #include "PeripheralNames.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "partition_M2351.h"
 #include "hal_secure.h"
 #if defined(DOMAIN_NS) && (DOMAIN_NS == 1L) && (TFM_LVL > 0)

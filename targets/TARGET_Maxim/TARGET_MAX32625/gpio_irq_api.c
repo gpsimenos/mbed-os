@@ -34,7 +34,7 @@
 #include <stddef.h>
 #include "cmsis.h"
 #include "gpio_irq_api.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 static gpio_irq_t *objs[MXC_GPIO_NUM_PORTS][MXC_GPIO_MAX_PINS_PER_PORT] = {{0}};
 static gpio_irq_handler irq_handler;

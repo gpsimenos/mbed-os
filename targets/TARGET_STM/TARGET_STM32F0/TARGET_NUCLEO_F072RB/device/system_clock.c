@@ -29,7 +29,7 @@
   */
 
 #include "stm32f0xx.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #define USE_PLL_HSE_EXTC     0x8  // Use external clock (ST Link MCO)
 #define USE_PLL_HSE_XTAL     0x4  // Use external xtal (X3 on board - not provided by default)

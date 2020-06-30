@@ -11,7 +11,7 @@
 #include "fsl_dcdc.h"
 #include "fsl_gpt.h"
 #include "fsl_clock_config.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "cmsis.h"
 #include "specific.h"
 

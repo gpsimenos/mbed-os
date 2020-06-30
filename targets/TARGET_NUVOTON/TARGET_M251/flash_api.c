@@ -21,7 +21,7 @@
 #if DEVICE_FLASH
 
 #include "flash_data.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 // This is a flash algo binary blob. It is PIC (position independent code) that should be stored in RAM
 // NOTE: On ARMv7-M/ARMv8-M, instruction fetches are always little-endian.

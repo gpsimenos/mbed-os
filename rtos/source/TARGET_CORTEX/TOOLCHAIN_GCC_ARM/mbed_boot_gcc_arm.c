@@ -16,7 +16,7 @@
  */
 
 #include "cmsis.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 #include "mbed_boot.h"
 #include "mbed_rtos_storage.h"
 #include "cmsis_os2.h"

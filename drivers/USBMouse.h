@@ -19,7 +19,7 @@
 #define USBMOUSE_H
 
 #include "USBHID.h"
-#include "PlatformMutex.h"
+#include "platform/PlatformMutex.h"
 
 #define REPORT_ID_MOUSE   2
 

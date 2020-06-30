@@ -40,7 +40,7 @@
 #include "pinmap.h"
 #include "PeripheralPins.h"
 #include "i2c_device.h" // family specific defines
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 #ifndef DEBUG_STDIO
 #   define DEBUG_STDIO 0

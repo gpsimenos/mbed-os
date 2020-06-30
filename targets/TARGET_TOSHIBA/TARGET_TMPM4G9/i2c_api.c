@@ -22,7 +22,7 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "PeripheralNames.h"
 #include "pinmap.h"
 #include "txz_i2c_api.h"

@@ -20,8 +20,8 @@
 
 #include "sleep_api.h"
 #include "us_ticker_api.h"
-#include "mbed_critical.h"
-#include "mbed_error.h"
+#include "platform/mbed_critical.h"
+#include "platform/mbed_error.h"
 
 extern void ticker_timer_data_save(void);
 extern void ticker_timer_data_restore(void);

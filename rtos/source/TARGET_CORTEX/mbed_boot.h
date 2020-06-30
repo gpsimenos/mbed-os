@@ -17,7 +17,7 @@
 #ifndef MBED_BOOT_H
 #define MBED_BOOT_H
 
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 #ifdef __cplusplus
 extern "C" {

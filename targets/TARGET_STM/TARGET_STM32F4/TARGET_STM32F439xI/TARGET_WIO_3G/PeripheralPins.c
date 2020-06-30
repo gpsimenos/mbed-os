@@ -31,7 +31,7 @@
  */
 
 #include "PeripheralPins.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_toolchain.h"
 
 // =====
 // Note: Commented lines are alternative possibilities which are not used per default.

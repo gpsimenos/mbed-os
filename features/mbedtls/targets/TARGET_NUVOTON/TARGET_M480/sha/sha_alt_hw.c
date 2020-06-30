@@ -27,7 +27,7 @@
 #include "nu_bitutil.h"
 #include "nu_timer.h"
 #include "mbed_assert.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "crypto-misc.h"
 
 #include <string.h>

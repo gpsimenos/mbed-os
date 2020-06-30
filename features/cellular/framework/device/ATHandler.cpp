@@ -20,14 +20,14 @@
 #include <limits.h>
 #include <errno.h>
 #include "ATHandler.h"
-#include "mbed_poll.h"
-#include "FileHandle.h"
-#include "mbed_debug.h"
+#include "platform/mbed_poll.h"
+#include "platform/FileHandle.h"
+#include "platform/mbed_debug.h"
 #include "rtos/ThisThread.h"
 #include "Kernel.h"
 #include "CellularUtil.h"
-#include "SingletonPtr.h"
-#include "ScopedLock.h"
+#include "platform/SingletonPtr.h"
+#include "platform/ScopedLock.h"
 
 using namespace mbed;
 using namespace events;

@@ -27,7 +27,7 @@
 #include "greentea-client/test_env.h"
 #include "unity/unity.h"
 #include "utest/utest.h"
-#include "SingletonPtr.h"
+#include "platform/SingletonPtr.h"
 #include <stdio.h>
 
 using namespace utest::v1;

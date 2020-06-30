@@ -17,7 +17,7 @@
 
 #include "USBPhyHw.h"
 #include "USBEndpoints_Nuvoton.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 
 static USBPhyHw *instance;
 

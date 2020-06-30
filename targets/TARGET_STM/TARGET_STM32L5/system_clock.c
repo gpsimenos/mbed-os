@@ -31,8 +31,8 @@
 
 #include "stm32l5xx.h"
 #include "nvic_addr.h"
-#include "mbed_error.h"
-#include "mbed_toolchain.h"
+#include "platform/mbed_error.h"
+#include "platform/mbed_toolchain.h"
 
 
 // clock source is selected with CLOCK_SOURCE in json config

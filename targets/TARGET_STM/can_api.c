@@ -21,7 +21,7 @@
 
 #include "pinmap.h"
 #include "PeripheralPins.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 static uint32_t can_irq_ids[2] = {0};
 static can_irq_handler irq_handler;
@@ -538,7 +538,7 @@ void can_irq_set(can_t *obj, CanIrqType type, uint32_t enable)
 #include "cmsis.h"
 #include "pinmap.h"
 #include "PeripheralPins.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "can_device.h" // Specific to STM32 serie
 #include <math.h>
 #include <string.h>

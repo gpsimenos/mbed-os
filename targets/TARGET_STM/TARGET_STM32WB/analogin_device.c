@@ -19,8 +19,8 @@
 
 #include "analogin_api.h"
 #include "mbed_assert.h"
-#include "mbed_error.h"
-#include "mbed_debug.h"
+#include "platform/mbed_error.h"
+#include "platform/mbed_debug.h"
 #include "mbed_wait_api.h"
 #include "cmsis.h"
 #include "pinmap.h"

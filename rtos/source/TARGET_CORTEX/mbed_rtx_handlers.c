@@ -19,7 +19,7 @@
 #include "rtx_os.h"
 #include "rtx_evr.h"
 #include "mbed_rtx.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "mbed_interface.h"
 #include "RTX_Config.h"
 #include "rtos/source/rtos_handlers.h"

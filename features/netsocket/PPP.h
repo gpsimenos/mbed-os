@@ -19,8 +19,8 @@
 #define PPP_H_
 
 #include <stdbool.h>
-#include "Callback.h"
-#include "FileHandle.h"
+#include "platform/Callback.h"
+#include "platform/FileHandle.h"
 #include "NetStackMemoryManager.h"
 
 class PPP {

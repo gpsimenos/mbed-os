@@ -20,7 +20,7 @@
 
 #if MBED_CONF_CELLULAR_USE_SMS
 
-#include "Callback.h"
+#include "platform/Callback.h"
 #include "nsapi_types.h"
 
 namespace mbed {

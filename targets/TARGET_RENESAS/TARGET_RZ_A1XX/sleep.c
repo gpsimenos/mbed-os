@@ -16,7 +16,7 @@
 #include "sleep_api.h"
 #include "cmsis.h"
 #include "mbed_interface.h"
-#include "mbed_critical.h"
+#include "platform/mbed_critical.h"
 #include "iodefine.h"
 
 #if DEVICE_SLEEP

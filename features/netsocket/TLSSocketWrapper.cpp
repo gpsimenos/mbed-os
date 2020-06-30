@@ -24,7 +24,7 @@
 #include "mbed-trace/mbed_trace.h"
 #include "mbedtls/debug.h"
 #include "mbedtls/platform.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "Kernel.h"
 
 // This class requires Mbed TLS SSL/TLS client code

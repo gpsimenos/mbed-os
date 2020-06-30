@@ -19,7 +19,7 @@
 #ifdef MBED_CONF_RTOS_PRESENT
 #include "Thread.h"
 #endif
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include "FlashSimBlockDevice.h"
 #include "SlicingBlockDevice.h"
 #include "greentea-client/test_env.h"

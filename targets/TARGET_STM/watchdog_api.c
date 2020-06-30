@@ -20,7 +20,7 @@
 #include "watchdog_api.h"
 #include "reset_reason_api.h"
 #include "device.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 #include <stdbool.h>
 
 #define MAX_IWDG_PR 0x6 // Max value of Prescaler_divider bits (PR) of Prescaler_register (IWDG_PR)

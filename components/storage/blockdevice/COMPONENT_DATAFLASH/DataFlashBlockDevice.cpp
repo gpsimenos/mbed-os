@@ -16,7 +16,7 @@
  */
 
 #include "DataFlashBlockDevice.h"
-#include "mbed_atomic.h"
+#include "platform/mbed_atomic.h"
 #include "rtos/ThisThread.h"
 #include <inttypes.h>
 

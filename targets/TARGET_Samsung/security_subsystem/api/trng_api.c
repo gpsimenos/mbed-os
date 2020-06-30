@@ -22,7 +22,7 @@
  ****************************************************************************/
 #include "hal/trng_api.h"
 #include "sss_driver_rng.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 void trng_init(trng_t *obj)
 {

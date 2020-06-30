@@ -17,7 +17,7 @@
  */
 
 #include "cmsis.h"
-#include "mbed_error.h"
+#include "platform/mbed_error.h"
 
 void mbed_sdk_init(void)
 {
