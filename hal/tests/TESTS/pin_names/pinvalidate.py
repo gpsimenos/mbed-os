@@ -16,12 +16,31 @@ limitations under the License.
 
 import re
 import argparse
+import os
 from tabulate import tabulate
 
+def scan_pinName_files(target_name):
+    targets = dict()
+    for root, dirs, files in os.walk('.'):
+        for f in files:
+            if f == "PinNames.h":
+                path = os.path.join(root, f)
+                name = '_'.join(re.findall("TARGET_([a-zA-Z0-9_]*)\/", path))
+                if not name:
+                    continue
+                if target_name:
+                    if target_name not in name:
+                        continue
+                targets[name] = path
+    return targets
+
 def pinName_to_dict(pinName_file_content):
+    pinName_enum_dict = dict()
+
     pinName_enum_match = re.search("typedef enum {\n([^}]*)\n} PinName;", pinName_file_content)
-    pinName_enum_body = pinName_enum_match.group(1)
-    pinName_enum_dict = dict(re.findall("^\s*([a-zA-Z0-9_]+)\s*=\s*([a-zA-Z0-9_]+)", pinName_enum_body, re.MULTILINE))
+    if pinName_enum_match:
+        pinName_enum_body = pinName_enum_match.group(1)
+        pinName_enum_dict = dict(re.findall("^\s*([a-zA-Z0-9_]+)\s*=\s*([a-zA-Z0-9_]+)", pinName_enum_body, re.MULTILINE))
     
     pinName_define_dict = dict(re.findall("^#define\s+([a-zA-Z0-9_]+)\s+([a-zA-Z0-9_]+)", pinName_file_content, re.MULTILINE))
     
@@ -156,89 +175,121 @@ def legacy_assignment_check(pinName_content):
         invalid_items.append([key, val, message])
     return invalid_items
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("path", help="Path to PinNames.h file")
-    parser.add_argument("-a", '--arduino', action="store_true", help="Run Arduino Uno test suite")
-    parser.add_argument("-g", '--generic', action="store_true", help="Run Generic pin names test suite")
-    args = parser.parse_args()
-
+def check_pinName_file(path, target_name, generic_checks, arduino_checks, verbosity):
     try:
-        pinName_file = open(args.path)
+        pinName_file = open(path)
         pinName_content = pinName_file.read()
     except:
-        exit("Cannot open file")
+        print("Cannot open file: " + pinName_file)
+        return
     
     try:
         pinName_dict = pinName_to_dict(pinName_content)
     except:
-        exit("Cannot extract PinName enum from file")
+        print("Cannot extract PinName enum from file: " + pinName_file)
+        return
+    
+    target_report = []
+    target_errors = []
 
-    report = []
-    errors = []
-
-    if args.generic or not (args.generic or args.arduino):
+    if generic_checks or not (generic_checks or arduino_checks):
         identity_errors = identity_assignment_check(pinName_dict)
         if identity_errors:
-            report.append(['', 'Generic pin names', 'identity', 'FAILED', len(identity_errors)])
+            target_report.append([target_name, 'Generic pin names', 'identity', 'FAILED', len(identity_errors)])
         else:
-            report.append(['', 'Generic pin names', 'identity', 'PASSED', 0])
-        errors += identity_errors
+            target_report.append([target_name, 'Generic pin names', 'identity', 'PASSED', 0])
+        target_errors += identity_errors
 
         nc_errors = nc_assignment_check(pinName_dict)
         if nc_errors:
-            report.append(['', 'Generic pin names', 'NC', 'FAILED', len(nc_errors)])
+            target_report.append([target_name, 'Generic pin names', 'NC', 'FAILED', len(nc_errors)])
         else:
-            report.append(['', 'Generic pin names', 'NC', 'PASSED', 0])
-        errors += nc_errors
+            target_report.append([target_name, 'Generic pin names', 'NC', 'PASSED', 0])
+        target_errors += nc_errors
 
         duplicate_errors = duplicate_assignment_check(pinName_dict)
         if duplicate_errors:
-            report.append(['', 'Generic pin names', 'duplicate', 'FAILED', len(duplicate_errors)])
+            target_report.append([target_name, 'Generic pin names', 'duplicate', 'FAILED', len(duplicate_errors)])
         else:
-            report.append(['', 'Generic pin names', 'duplicate', 'PASSED', 0])
-        errors += duplicate_errors
+            target_report.append([target_name, 'Generic pin names', 'duplicate', 'PASSED', 0])
+        target_errors += duplicate_errors
 
         legacy_errors = legacy_assignment_check(pinName_content)
         if legacy_errors:
-            report.append(['', 'Generic pin names', 'legacy', 'FAILED', len(legacy_errors)])
+            target_report.append([target_name, 'Generic pin names', 'legacy', 'FAILED', len(legacy_errors)])
         else:
-            report.append(['', 'Generic pin names', 'legacy', 'PASSED', 0])
-        errors += legacy_errors
+            target_report.append([target_name, 'Generic pin names', 'legacy', 'PASSED', 0])
+        target_errors += legacy_errors
 
-    if args.arduino or not (args.generic or args.arduino):
+    if arduino_checks or not (generic_checks or arduino_checks):
         arduino_existence_errors = arduino_existence_check(pinName_dict)
         if arduino_existence_errors:
-            report.append(['', 'Arduino Uno', 'existence', 'FAILED', len(arduino_existence_errors)])
+            target_report.append([target_name, 'Arduino Uno', 'existence', 'FAILED', len(arduino_existence_errors)])
         else:
-            report.append(['', 'Arduino Uno', 'existence', 'PASSED', 0])
-        errors += arduino_existence_errors
+            target_report.append([target_name, 'Arduino Uno', 'existence', 'PASSED', 0])
+        target_errors += arduino_existence_errors
 
         arduino_nc_errors = arduino_nc_assignment_check(pinName_dict)
         if arduino_nc_errors:
-            report.append(['', 'Arduino Uno', 'NC', 'FAILED', len(arduino_nc_errors)])
+            target_report.append([target_name, 'Arduino Uno', 'NC', 'FAILED', len(arduino_nc_errors)])
         else:
-            report.append(['', 'Arduino Uno', 'NC', 'PASSED', 0])
-        errors += arduino_nc_errors
+            target_report.append([target_name, 'Arduino Uno', 'NC', 'PASSED', 0])
+        target_errors += arduino_nc_errors
 
         arduino_duplicate_errors = arduino_duplicate_assignment_check(pinName_dict)
         if arduino_duplicate_errors:
-            report.append(['', 'Arduino Uno', 'duplicate', 'FAILED', len(arduino_duplicate_errors)])
+            target_report.append([target_name, 'Arduino Uno', 'duplicate', 'FAILED', len(arduino_duplicate_errors)])
         else:
-            report.append(['', 'Arduino Uno', 'duplicate', 'PASSED', 0])
-        errors += arduino_duplicate_errors
+            target_report.append([target_name, 'Arduino Uno', 'duplicate', 'PASSED', 0])
+        target_errors += arduino_duplicate_errors
     
-    if errors:
-        print(tabulate(errors, headers=['Pin', 'Value', 'Error'], tablefmt='fancy_grid'))
-    
-    print(tabulate(report, headers=['Platform name', 'Test suite', 'Test case', 'Result', 'Errors'], tablefmt='fancy_grid'))
+    if verbosity > 0:
+        print(tabulate(target_report, headers=['Platform name', 'Test suite', 'Test case', 'Result', 'Errors'], tablefmt='pretty'))
 
-    if errors:
-        print("Errors found in PinNames file")
-        exit(1)
-    else:
-        print("PinNames file is valid")
-        exit(0)
+    if target_errors:
+        if verbosity > 1:
+            print(tabulate(target_errors, headers=['Pin', 'Value', 'Error'], tablefmt='pretty'))
+
+    return len(target_errors)
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-a", '--arduino', action="store_true", help="Run Arduino Uno test suite")
+    parser.add_argument("-g", '--generic', action="store_true", help="Run Generic pin names test suite")
+    parser.add_argument('-v', '--verbose', action='count', default=0)
+    parser.add_argument("-t", '--target', help="Target name")
+    parser.add_argument("-p", '--path', help="Path to PinNames.h file")
+    args = parser.parse_args()
+
+    if args.path:
+        file_valid = check_pinName_file(args.path, '', args.generic, args.arduino, args.verbose)
+
+        if not file_valid:
+            print("Errors found in PinNames file")
+            exit(1)
+        else:
+            print("PinNames file is valid")
+            exit(0)
+    
+    targets = scan_pinName_files(args.target)
+
+    errors_found = False
+    report = []
+    for target_name, path in targets.items():
+        if args.verbose > 1:
+            print("\n ==== Checking " + target_name + " ====")
+
+        errors = check_pinName_file(path, target_name, args.generic, args.arduino, args.verbose)
+        if errors:
+            errors_found = True
+            report.append([target_name, 'FAILED', errors, path])
+        else:
+            report.append([target_name, 'PASSED', 0, path])
+        
+        if args.verbose > 1:
+            print(" ==== Check complete for " + target_name + " ====\n")
+    
+    print(tabulate(report, headers=['Platform name', 'Result', 'Errors', 'Path'], tablefmt='pretty'))
 
 if __name__ == "__main__":
     main()
