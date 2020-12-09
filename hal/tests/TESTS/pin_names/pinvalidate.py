@@ -180,14 +180,14 @@ def check_pinName_file(path, target_name, generic_checks, arduino_checks, verbos
         pinName_file = open(path)
         pinName_content = pinName_file.read()
     except:
-        print("Cannot open file: " + pinName_file)
-        return
+        print("Cannot open file: " + path)
+        return 1
     
     try:
         pinName_dict = pinName_to_dict(pinName_content)
     except:
         print("Cannot extract PinName enum from file: " + pinName_file)
-        return
+        return 1
     
     target_report = []
     target_errors = []
@@ -262,9 +262,9 @@ def main():
     args = parser.parse_args()
 
     if args.path:
-        file_valid = check_pinName_file(args.path, '', args.generic, args.arduino, args.verbose)
+        errors = check_pinName_file(args.path, '', args.generic, args.arduino, args.verbose)
 
-        if not file_valid:
+        if errors > 0:
             print("Errors found in PinNames file")
             exit(1)
         else:
