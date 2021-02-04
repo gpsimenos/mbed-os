@@ -45,9 +45,45 @@ class ArgumentParserWithDefaultHelp(argparse.ArgumentParser):
         self.print_help()
         raise SystemExit(ReturnCode.INVALID_OPTIONS.value)
 
+def find_target_by_path(path):
+    """Find a target by path."""
+    mbed_os_root = pathlib.Path(__file__).absolute().parents[4]
+    target_path = pathlib.Path(path).resolve()
 
-def find_target(target_name=""):
-    """Find a target."""
+    targets = dict()
+
+    parent_dir_target = re.findall(
+        r"TARGET_([a-zA-Z0-9_]*)[\/\\]PinNames.h",
+        target_path.absolute().as_posix()
+    )
+    if not parent_dir_target:
+        targets[path] = path
+        return targets
+
+    with (
+        mbed_os_root.joinpath("targets", "targets.json")
+    ).open() as targets_json_file:
+        target_data = json.load(targets_json_file)
+
+        # find target in targets.json
+        matches = []
+        for target in target_data:
+            if "public" in target_data[target]:
+                if not target_data[target]["public"]:
+                    continue
+
+            if parent_dir_target[0] in target:
+                matches.append(target)
+
+    if len(matches) == 1:
+        targets[matches[0]] = path
+    else:
+        targets[path] = path
+
+    return targets
+
+def find_target_by_name(target_name=""):
+    """Find a target by name."""
     mbed_os_root = pathlib.Path(__file__).absolute().parents[4]
     
     targets = dict()
@@ -57,35 +93,29 @@ def find_target(target_name=""):
     ).open() as targets_json_file:
         target_data = json.load(targets_json_file)
 
-    for f in mbed_os_root.rglob("PinNames.h"):
-        fallback_name_components = re.findall(
-            r"TARGET_([a-zA-Z0-9_]*)[\/\\]", f.absolute().as_posix()
-        )
-        fallback_name = "_".join(fallback_name_components)
-
-        if not fallback_name:
-            continue
-
-        if target_name:
-            if target_name not in fallback_name:
-                continue
-
-        # try to find corresponding target in targets.json
+        # find target in targets.json
         matches = []
         for target in target_data:
             if "public" in target_data[target]:
                 if not target_data[target]["public"]:
                     continue
 
-            if target in fallback_name:
+            if target_name in target:
                 matches.append(target)
 
         if not matches:
-            targets[fallback_name] = f
-        elif len(matches) == 1:
-            targets[matches[0]] = f
-        elif len(matches) > 1:
-            targets[fallback_name] = f
+            raise Exception('Target not found in targets.json')
+
+    # find corresponding PinNames.h files
+    for f in mbed_os_root.rglob("PinNames.h"):
+        parent_dir_target = re.findall(
+            r"TARGET_([a-zA-Z0-9_]*)[\/\\]PinNames.h", f.absolute().as_posix()
+        )
+        if not parent_dir_target:
+            continue
+
+        if parent_dir_target[0] in matches:
+            targets[parent_dir_target[0]] = f
 
     return targets
 
@@ -516,13 +546,13 @@ def validate_pin_names(args):
     if args.paths:
         paths = args.paths.split(",")
         for path in paths:
-            targets[path] = path
+            targets = {**targets, **find_target_by_path(path)}
     elif args.targets:
         target_names = args.targets.split(",")
         for target_name in target_names:
-            targets = {**targets, **find_target(target_name)}
+            targets = {**targets, **find_target_by_name(target_name)}
     elif args.all:
-        targets = find_target()
+        targets = find_target_by_name()
 
     report = []
     for target, path in targets.items():
